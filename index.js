@@ -1,7 +1,7 @@
 const jwt = require("jsonwebtoken");
 
 exports.handler = async (event) => {
-  const token = event["auth-token"];
+  const token = event["authorizationToken"];
 
   let permission = "Deny";
 
